@@ -44,13 +44,12 @@
 **(1) 파이계수 구하기**
    - (3)의 단어 동시 출현 빈도 데이터를 통해 파이 계수 연산
 
-## 📌 데이터 분석 결과
-
-![Phi_Coefficient](https://github.com/SemiKwon/Semantic_Analysis/assets/76101347/99dbd275-7d96-4c81-abe2-08f596041037)
-
-
 **(2) 관심 단어 별 파이 계수 큰 단어 추출**
    - **외모, 현실, 자존감, 연애, 결혼, 호감** 등 현대인들의 결혼·연애관을 엿볼 수 있는 단어들을 기준으로 추출
 
 **(3) 막대 그래프 제작**
    - 결과를 막대 그래프로 시각화
+
+## 📌 데이터 분석 결과
+
+![Phi_Coefficient](https://github.com/SemiKwon/Semantic_Analysis/assets/76101347/99dbd275-7d96-4c81-abe2-08f596041037)
