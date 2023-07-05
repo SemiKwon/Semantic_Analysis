@@ -14,7 +14,7 @@
 **<미혼남녀의 효율적 만남> 20화까지 베스트 댓글 15개를 수집, 데이터프레임화 및 csv 파일저장**
 
 ## 📌 데이터 분석 방법
-![Static Badge](https://img.shields.io/badge/R-%23FF0000) ### 의미망 네트워크 구축
+![Static Badge](https://img.shields.io/badge/R-%23FF0000) # 의미망 네트워크 구축
 ---
 **(1) 텍스트 전처리 (stringr, textclean, tidytext)**
    - 불필요한 문자 제거하기
