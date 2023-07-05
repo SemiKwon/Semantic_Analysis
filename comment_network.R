@@ -120,33 +120,3 @@ slice_max(correlation, n=5)
 top_cors$item2 <- factor(top_cors$item2, levels=target)
 library(ggplot2)
 ggplot(top_cors, aes(x=reorder_within(item1, correlation, item2), y = correlation, fill=item2))+geom_col(show.legend=F)+facet_wrap(~item2, scales="free")+coord_flip()+scale_x_reordered()+labs(x=NULL)
-
-#n-gram 연이어 사용된 단어쌍 분석
-line_comment <- bind_comment %>%
-group_by(아이디) %>% #아이디 별로 word를 결합
-summarise(sentence = paste(word, collapse=" "))
-
-#bigram으로 토큰화
-bigram_comment <- line_comment %>%
-unnest_tokens ( input = sentence, output = bigram, token = "ngrams", n=2)
-bigram_comment
-
-#bigram으로 분리
-bigram_separated <- bigram_comment %>%
-separate(bigram, c("word1", "word2"), sep = " ")
-bigram_separated
-
-#단어쌍 빈도 구하기
-pair_bigram <- bigram_separated %>%
-count(word1, word2, sort=T) %>%
-na.omit() #결측치가 있는 행은 제거
-
-#의미가 연결되는 단어로 구성되는 단어쌍 - 연결 중심성 커뮤니티 변수 추가
-graph_bigram <- pair_bigram %>%
-filter(n>=20) %>%
-as_tbl_graph(directed=F) %>%
-mutate(centrality=centrality_degree(), group=as.factor(group_infomap())) 
-
-#n-gram 네트워크 그래프 제작
-set.seed(1234)
-word_networks(graph_bigram)
