@@ -52,4 +52,9 @@
 
 ## 📌 데이터 분석 결과
 
+![3](https://github.com/SemiKwon/Semantic_Analysis/assets/76101347/7230a018-9bef-4ab8-af8a-840b3671c32c)
+
+18개의 커뮤니티로 분류된 데이터셋에서 주목할 만한 노드는 6번 노드에 해당하는 '사랑'입니다. 
+
+
 ![Phi_Coefficient](https://github.com/SemiKwon/Semantic_Analysis/assets/76101347/99dbd275-7d96-4c81-abe2-08f596041037)
