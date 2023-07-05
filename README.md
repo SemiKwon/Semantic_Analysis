@@ -8,5 +8,5 @@
 * 웹 스크래퍼(크롤링)
   - pandas, numpy, selenium, webdriver, openpyxl 패키지 활용
   - 개발자 도구(F12)의 태그를 확인. 필요한 요소들을 추출
-  - ![화면 캡처 2023-07-03 235059](https://github.com/SemiKwon/Semantic_Analysis/assets/76101347/f72f2690-343b-4a63-9ac3-df49ac2e6e4e)
+![화면 캡처 2023-07-03 235059](https://github.com/SemiKwon/Semantic_Analysis/assets/76101347/f72f2690-343b-4a63-9ac3-df49ac2e6e4e)
 
