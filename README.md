@@ -15,7 +15,7 @@
 
 ## 📌 데이터 분석 방법
 ![Static Badge](https://img.shields.io/badge/R-%23FF0000) **의미망 네트워크 구축**
-
+---
 **(1) 텍스트 전처리 (stringr, textclean, tidytext)**
    - 불필요한 문자 제거하기
    - 연속된 공백 제거하기
