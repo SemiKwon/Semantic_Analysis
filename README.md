@@ -6,5 +6,4 @@
 
 ## 📌 데이터 수집 방법
 * 웹 스크래퍼(크롤링)
-
   - pandas, numpy, selenium, webdriver, openpyxl 패키지 활용
