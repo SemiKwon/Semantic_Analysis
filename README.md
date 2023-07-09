@@ -67,7 +67,7 @@
 
 ---
 
-![Phi_Coefficient](https://github.com/SemiKwon/Semantic_Analysis/assets/76101347/99dbd275-7d96-4c81-abe2-08f596041037)
+![파이계쑤](https://github.com/SemiKwon/Semantic_Analysis/assets/76101347/d3a77f11-67ca-47a9-b249-71cbeabafe59)
 
 외모, 현실, 자존감, 연애, 결혼, 호감 6개의 단어의 파이계수
 
