@@ -1,3 +1,4 @@
+#필요한 패키지 설치
 library(readr)
 library(dplyr)
 library(stringr)
