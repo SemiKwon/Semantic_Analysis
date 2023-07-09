@@ -1,4 +1,4 @@
-#KoNLP 설치 및 확인 - R 4.3.1 버전(R 버전 4만 넘으면 모두 가능한 듯)
+#KoNLP 설치 및 확인 - R 4.3.1 버전(R 버전 4만 넘으면 가능)
 # 참고 : https://www.youtube.com/watch?v=Ewy8mEUriJg
 # https://lime-jelly.tistory.com/entry/R%EC%97%90%EC%84%9C-%ED%8C%A8%ED%82%A4%EC%A7%80-%EC%84%A4%EC%B9%98%EC%98%A4%EB%A5%98-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95
 install.packages("KoNLP")
@@ -102,7 +102,10 @@ ggraph(graph_comment, layout="fr")+
                  family="namugothic")+
   theme_graph()
 
-  
+#연결중심성이 높은 주요 단어
+graph_comment %>%
+	arrange(-centrality)
+
 #파이 계수 구하기
 word_cors <- bind_comment %>%
 add_count(word) %>%
@@ -126,4 +129,9 @@ top_cors <- word_cors %>%
 #막대 그래프 만들기
 top_cors$item2 <- factor(top_cors$item2, levels=target)
 library(ggplot2)
-ggplot(top_cors, aes(x=reorder_within(item1, correlation, item2), y = correlation, fill=item2))+geom_col(show.legend=F)+facet_wrap(~item2, scales="free")+coord_flip()+scale_x_reordered()+labs(x=NULL)
+ggplot(top_cors, aes(x=reorder_within(item1, correlation, item2), y = correlation, fill=item2))+
+  geom_col(show.legend=F)+
+  facet_wrap(~item2, scales="free")+
+  coord_flip()+
+  scale_x_reordered()+
+  labs(x=NULL)
