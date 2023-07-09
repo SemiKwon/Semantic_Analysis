@@ -109,8 +109,6 @@ add_count(word) %>%
 filter(n>=3) %>%
 pairwise_cor(item=word, feature = 아이디, sort = T)
 
-word_cors
-
 #특정 단어와 관련성이 큰 단어 살펴보기
 word_cors %>%
   filter(item1=="외모")
