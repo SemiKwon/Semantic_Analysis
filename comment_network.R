@@ -1,7 +1,7 @@
 #네이버 웹툰 '미혼남녀의 효율적 만남' 댓글 csv 파일 불러오기
 library(readr)
 comments <- read.csv("webtoon_comment.csv")
-
+ 
 #데이터 전처리 
 library(dplyr)
 library(stringr)
